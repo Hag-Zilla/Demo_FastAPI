@@ -54,20 +54,21 @@ Applies to FastAPI API code in `services/api/`.
   in route functions.
 - Never silently swallow exceptions with a bare `except: pass`.
 
+## Examples
+
 ### Dependencies
 
-- Use `Annotated[Type, Depends(...)]` for all FastAPI dependency injection:
+Use `Annotated[Type, Depends(...)]` for all FastAPI dependency injection:
 
-  ```python
-  from typing import Annotated
-  from fastapi import Depends
+```python
+from typing import Annotated
+from fastapi import Depends
 
-  async def endpoint(
-      user: Annotated[User, Depends(get_current_user)],
-      db: Annotated[Session, Depends(get_db)],
-  ) -> ResponseModel:
-      ...
-  ```
+async def endpoint(
+    user: Annotated[User, Depends(get_current_user)],
+    db: Annotated[Session, Depends(get_db)],
+) -> ResponseModel:
+    ...
 
 - Never pass dependencies as plain function arguments without `Depends`.
 - Define `__all__` in router modules to make the public API surface explicit.

@@ -91,6 +91,7 @@ async def get_current_user(
 
     Args:
         token: Bearer token extracted from the Authorization header.
+        secret_key: Secret key for token validation.
 
     Returns:
         Subject claim (user ID) from the validated token.
@@ -99,7 +100,7 @@ async def get_current_user(
         HTTPException: HTTP 401 if token is invalid or expired.
     """
     try:
-      payload = jwt.decode(token, secret_key, algorithms=["HS256"])
+        payload = jwt.decode(token, secret_key, algorithms=["HS256"])
         return payload["sub"]
     except JWTError:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED)

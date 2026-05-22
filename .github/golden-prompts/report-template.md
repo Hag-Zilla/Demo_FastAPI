@@ -5,6 +5,7 @@
 - PR or branch:
 - Date:
 - Evaluator:
+- Model & Configuration: (e.g., Claude 3.5 Opus, with frugality-first mode)
 
 ## Scenario Results
 

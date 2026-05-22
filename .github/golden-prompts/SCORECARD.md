@@ -26,14 +26,14 @@ Use these as secondary checks:
 
 ## Scoring Matrix
 
-| Category | Result | Notes |
-| --- | --- | --- |
-| Required content | Pass / Warn / Fail | |
-| Prohibited content | Pass / Warn / Fail | |
-| Safety and security | Pass / Warn / Fail | |
-| Structure and style | Pass / Warn / Fail | |
-| Actionability | Pass / Warn / Fail | |
-| Scope control | Pass / Warn / Fail | |
+| Category | Result | Notes | Criticality |
+| --- | --- | --- | --- |
+| Required content | Pass / Warn / Fail | | **CRITICAL** |
+| Prohibited content | Pass / Warn / Fail | | **CRITICAL** |
+| Safety and security | Pass / Warn / Fail | | **CRITICAL** |
+| Structure and style | Pass / Warn / Fail | | Optional |
+| Actionability | Pass / Warn / Fail | | Optional |
+| Scope control | Pass / Warn / Fail | | Optional |
 
 ## Final Decision Rule
 

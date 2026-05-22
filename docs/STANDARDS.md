@@ -242,4 +242,4 @@ If a repository uses ADRs, reference the ADR identifier here.
 
 ---
 
-Last updated: 2026-05-11
+Last updated: 2026-05-22
