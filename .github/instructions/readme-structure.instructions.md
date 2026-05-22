@@ -1,5 +1,5 @@
 ---
-applyTo: "**/README.md"
+applyTo: "**/README.md,**/CHANGELOG.md"
 ---
 
 ## Purpose
@@ -96,6 +96,49 @@ Describe env vars, config files, and instruction files here.
 ## Roadmap
 
 - Planned feature A.
+
+## CHANGELOG.md
+
+Maintain a CHANGELOG.md file following the **[Keep a Changelog](https://keepachangelog.com/)**
+format with [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+### Standard Sections
+
+- **Unreleased** — Changes currently in development.
+- **Added** — New features and capabilities.
+- **Changed** — Updates to existing functionality.
+- **Deprecated** — Features marked for removal.
+- **Removed** — Deleted or archived features.
+- **Fixed** — Bug fixes and corrections.
+- **Security** — Security patches and vulnerability fixes.
+
+### Guidelines
+
+- Update CHANGELOG.md with each notable change before release.
+- Use semantic versioning for version numbers (e.g., `0.1.0`, `1.2.3`).
+- Include links to GitHub compare views for each released version.
+- Keep entries concise and user-focused; avoid implementation details.
+
+### Example
+
+```markdown
+## [Unreleased]
+
+### Added
+- New authentication module with OAuth2 support
+- Database migration system with Alembic
+
+### Fixed
+- Critical bug in expense calculations
+
+## [0.1.0] - 2026-05-22
+
+### Added
+- Initial project setup with FastAPI
+
+[Unreleased]: https://github.com/owner/repo/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/owner/repo/releases/tag/v0.1.0
+```
 
 ## Contributing
 
